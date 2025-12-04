@@ -36,15 +36,15 @@ with col1:
     Age = st.number_input("Age", min_value=1, max_value=100, value=35)
     TypeofContact = st.selectbox("Type of Contact", ["Self Enquiry", "Company Invited"])
     CityTier = st.selectbox("City Tier", [1, 2, 3])
-    DurationOfPitch = st.number_input("Duration of Pitch (minutes)", min_value=0, max_value=60, value=10)
-    Occupation = st.selectbox("Occupation", ["Salaried", "Self Employed", "Business", "Free Lancer"])
+    DurationOfPitch = st.number_input("Duration of Pitch (minutes)", min_value=0, max_value=100, value=10)
+    Occupation = st.selectbox("Occupation", ["Salaried", "Self Employed", "Small Business", "Large Business", "Free Lancer"])
 
 with col2:
     Gender = st.selectbox("Gender", ["Male", "Female"])
-    NumberOfPersonVisiting = st.number_input("Number Of Persons Visiting", min_value=1, max_value=10, value=2)
+    NumberOfPersonVisiting = st.number_input("Number Of Persons Visiting", min_value=1, max_value=20, value=2)
     NumberOfFollowups = st.number_input("Number of Follow-ups", min_value=0, max_value=10, value=2)
     PreferredPropertyStar = st.selectbox("Preferred Property Star", [3, 4, 5])
-    ProductPitched = st.selectbox("Product Pitched", ["Basic", "Deluxe", "Super Deluxe", "King", "Queen"])
+    ProductPitched = st.selectbox("Product Pitched", ["Basic", "Deluxe", "Standard", "Super Deluxe", "King"])
 
 st.markdown("---")
 
@@ -56,10 +56,10 @@ with col3:
     Passport = st.selectbox("Passport Available?", ["Yes", "No"])
     
 with col4:
-    PitchSatisfactionScore = st.slider("Pitch Satisfaction Score", 1, 5, 3)
+    PitchSatisfactionScore = st.slider("Pitch Satisfaction Score", 1, 5, 1)
     OwnCar = st.selectbox("Owns a Car?", ["Yes", "No"])
     NumberOfChildrenVisiting = st.number_input("Number of Children Visiting", min_value=0, max_value=10, value=0)
-    Designation = st.selectbox("Designation", ["Executive", "Manager", "Senior Manager", "AVP"])
+    Designation = st.selectbox("Designation", ["Executive", "Manager", "Senior Manager", "AVP", "VP"])
 
 MonthlyIncome = st.number_input("Monthly Income (₹)", min_value=0.0, value=25000.0)
 

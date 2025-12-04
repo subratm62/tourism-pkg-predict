@@ -35,10 +35,10 @@ ensure_space_exists(REPO_ID)
 # -----------------------------
 # 2. Upload folder to the Space
 # -----------------------------
-print("📤 Uploading files to HuggingFace Space...")
+print("Uploading files to HuggingFace Space...")
 
 api.upload_folder(
-    folder_path="tourism_project/deployment",   # local folder
+    folder_path="deployment",   # local folder
     repo_id=REPO_ID,
     repo_type="space",
     path_in_repo="",    # root of the Space repo

@@ -36,8 +36,8 @@ with col1:
     Age = st.number_input("Age", min_value=1, max_value=100, value=35)
     TypeofContact = st.selectbox("Type of Contact", ["Self Enquiry", "Company Invited"])
     CityTier = st.selectbox("City Tier", [1, 2, 3])
-    DurationOfPitch = st.number_input("Duration of Pitch (minutes)", min_value=0, max_value=100, value=10)
-    Occupation = st.selectbox("Occupation", ["Salaried", "Self Employed", "Small Business", "Large Business", "Free Lancer"])
+    DurationOfPitch = st.number_input("Duration of Pitch (minutes)", min_value=0, max_value=300, value=10)
+    Occupation = st.selectbox("Occupation", ["Salaried", "Small Business", "Large Business", "Free Lancer"])
 
 with col2:
     Gender = st.selectbox("Gender", ["Male", "Female"])
